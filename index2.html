@@ -3,59 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>هنرستان اندیشه - چهاردانگه</title>
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font/dist/font-face.css" rel="stylesheet" type="text/css" />
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Vazir', sans-serif;
+      font-family: 'Tahoma', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f3f5;
-      color: #2c3e50;
+      background-color: #f0f2f5;
+      color: #333;
       line-height: 1.8;
     }
 
     header {
-      background: linear-gradient(135deg, #2980b9, #2c3e50);
+      background-color: #2c3e50;
       color: white;
       text-align: center;
       padding: 50px 20px;
-      animation: fadeIn 1s ease-in;
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.7rem;
       margin-bottom: 10px;
     }
 
     section {
       max-width: 1000px;
       margin: 30px auto;
-      padding: 40px 30px;
+      padding: 40px 25px;
       background: white;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      animation: fadeIn 1.5s ease-in-out;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
 
     h2 {
-      color: #2c3e50;
-      border-bottom: 3px solid #3498db;
+      color: #2980b9;
+      border-bottom: 2px solid #3498db;
       padding-bottom: 10px;
       margin-bottom: 30px;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
 
     .field {
-      margin-bottom: 50px;
-    }
-
-    .field h3 {
-      color: #2980b9;
-      margin-bottom: 10px;
+      margin-bottom: 40px;
     }
 
     .field img {
@@ -63,12 +51,6 @@
       max-width: 600px;
       border-radius: 12px;
       margin-top: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .field img:hover {
-      transform: scale(1.03);
     }
 
     ul {
@@ -76,16 +58,8 @@
       padding: 0;
     }
 
-    ul li {
-      position: relative;
-      padding-right: 28px;
-      margin-bottom: 10px;
-    }
-
     ul li::before {
-      content: "✔";
-      position: absolute;
-      right: 0;
+      content: "✔️ ";
       color: #27ae60;
     }
 
@@ -93,24 +67,15 @@
       background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 0.9rem;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 0.95rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
-
-      section {
-        padding: 30px 20px;
-      }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -133,31 +98,31 @@
 
     <div class="field">
       <h3>تولید و توسعه</h3>
-      <img src="https://example.com/image.jpg" alt="توضیح تصویر">
+      <img src="images/workshop.jpg" alt="کارگاه تولید و توسعه">
       <p>آموزش مهارت‌های فنی برای طراحی، تولید و توسعه محصولات صنعتی با دستگاه‌ها و تکنولوژی‌های روز دنیا.</p>
     </div>
 
     <div class="field">
       <h3>نقشه‌کشی صنعتی</h3>
-      <img src="images/نقشه کشی.jpg" alt="کارگاه"alt="نقشه‌کشی صنعتی">
+      <img src="images/نقشه کشی.jpg" alt="نقشه‌کشی صنعتی">
       <p>آشنایی با نرم‌افزارهای تخصصی و اصول ترسیم نقشه‌های فنی مورد نیاز در صنایع.</p>
     </div>
 
     <div class="field">
       <h3>رشته آسانسور</h3>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Elevator_control_panel.jpg" alt="آسانسور">
+      <img src="images/elevator.jpg" alt="آسانسور">
       <p>آموزش نصب، راه‌اندازی و تعمیر آسانسورهای مدرن با استانداردهای ایمنی بالا.</p>
     </div>
 
     <div class="field">
       <h3>تأسیسات سرمایشی</h3>
-      <img src="https://cdn.pixabay.com/photo/2017/08/10/03/29/air-conditioner-2619152_1280.jpg" alt="تأسیسات سرمایشی">
+      <img src="images/aircooling.jpg" alt="تأسیسات سرمایشی">
       <p>مهارت‌آموزی در زمینه نصب، سرویس و نگهداری سیستم‌های سرمایشی و تهویه مطبوع.</p>
     </div>
 
     <div class="field">
       <h3>امور اداری</h3>
-      <img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/entrepreneur-593371_1280.jpg" alt="امور اداری">
+      <img src="images/office.jpg" alt="امور اداری">
       <p>آموزش اصول بایگانی، نامه‌نگاری، کار با نرم‌افزارهای آفیس و مهارت‌های سازمانی.</p>
     </div>
   </section>
@@ -185,4 +150,3 @@
 
 </body>
 </html>
-
